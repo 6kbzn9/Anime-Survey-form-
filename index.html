@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Survey Form Challenge</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="main">
+         <div class="header">
+            <h1 id="title">Anime Survey Form</h1>
+            <p id="description">Survey about anime you like</p>
+         </div>
+         <form id="survey-form">
+            <div class="input-container">
+               <label id="name-label" for="name">Name</label>
+               <input type="text" id="name" class="input" placeholder="Enter your name" required>
+            </div>
+            <div class="input-container">
+               <label id="email-label" for="email">Email</label>
+               <input type="email" id="email" class="input" placeholder="Enter your Email" required>
+            </div>
+            <div class="input-container">
+               <label id="number-label" for="number">Age</label>
+               <input type="number" id="number" class="input" placeholder="Age" min="12" max="65" required>
+            </div>
+            <div class="input-container">
+               <label for="genre-dropdown">Genre</label>
+               <select id="genrw-dropdown" class="input">
+                <option value="" selected disabled>Select your genre</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+               </select>
+            </div>
+            <div class="input-container">
+             <p>How do you prefer waching anime?</p>
+             <div class="input-check">
+              <input type="radio" name="subtitle" id="sub" value="sub">
+              <label for="sub">Subbed</label>
+             </div>
+             <div class="input-check">
+              <input type="radio" name="subtitle" id="dub" value="dub">
+              <label for="dub">Dubbed</label>
+             </div>
+             <div class="input-check">
+              <input type="radio" name="subtitle" id="sub-dub" value="both">
+              <label for="sub-dub">Both</label>
+             </div>
+            </div>
+            <div class="input-container">
+               <label for="dropdown">Time you spend on watching anime each week</label>
+               <select id="dropdown" class="input">
+                  <option value="0" selected disabled>Select one option</option>
+                  <option value="1">Less than 2 hours</option>
+                  <option value="2">2 to 4 hours</option>
+                  <option value="3">4 to 8 hours</option>
+                  <option value="4">8 to 12 hours</option>
+                  <option value="5">12 to 16 hours</option>
+                  <option value="6">16 to 20 hours</option>
+                  <option value="7">More than 20 hours</option>
+               </select>
+            </div>
+            
+            <div class="input-container">
+               <p>What Anime Genre do you prefere?</p>
+               <div class="input-check">
+                <input type="checkbox" id="action" value="action">
+                <label for="action">Action</label>
+               </div>
+               <div class="input-check">
+                <input type="checkbox" id="adventure" value="adventure">
+                <label for="adventure">Adventure</label>
+               </div>
+               <div class="input-check">
+                <input type="checkbox" id="comedy" value="comedy">
+                <label for="comedy">Comedy</label>
+               </div>
+               <div class="input-check">
+                <input type="checkbox" id="drama" value="drama">
+                <label for="drama">Drama</label>
+               </div>
+               <div class="input-check">
+                <input type="checkbox" id="fantazy" value="fantazy">
+                <label for="fantazy">Fantazy</label>
+               </div>
+               <div class="input-check">
+                <input type="checkbox" id="magic" value="magic">
+                <label for="magic">Magic</label>
+               </div>
+               <div class="input-check">
+                <input type="checkbox" id="horror" value="horror">
+                <label for="horror">Horror</label>
+               </div>
+               <div class="input-check">
+                <input type="checkbox" id="mystery" value="mystery">
+                <label for="mystery">Mystery</label>
+               </div>
+               <div class="input-check">
+                <input type="checkbox" id="romance" value="romance">
+                <label for="romance">Romance</label>
+               </div>
+               <div class="input-check">
+                <input type="checkbox" id="others" value="others">
+                <label for="others">Others</label>
+               </div>
+            </div>
+            <div class="input-container">
+               <p>Any comments or suggestions?</p>
+               <textarea placeholder="Enter your comment here..."></textarea>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+         </form>
+      </div>
+      <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   </body>
+</html>
